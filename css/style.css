@@ -140,6 +140,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 4px;
+  border: 0px;
 }
 
 .heroes {
@@ -466,6 +468,43 @@ body {
 .footer-linkedin:hover,
 .footer-linkedin:focus {
   background-color: var(--acent-color);
+}
+
+.subscribe-section {
+  margin-left: auto;
+}
+.subscribe-imput {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2f303a;
+  margin-right: 12px;
+}
+
+.subscribe-btn {
+  width: 200px;
+  height: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+  background-color: var(--acent-color);
+  border-radius: 4px;
+  border: 0px;
+}
+.subscribe-btn::after {
+  background-image: url(../images/socialnetworks-icons-footer/icon-send.svg);
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-left: 10px;
+  background-position: bottom;
 }
 
 /* ПОРТФОЛИО */
