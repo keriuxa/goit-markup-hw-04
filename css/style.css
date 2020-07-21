@@ -13,7 +13,16 @@ body {
   background-color: white;
   list-style: none;
 }
-
+p {
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
 .list {
   list-style: none;
   padding: 0;
@@ -43,8 +52,8 @@ body {
 /* ХЕДЕР */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
   border: 1px solid #ececec;
 }
 .logo-studio {
@@ -71,6 +80,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+
+.header-items a {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation-items .contacts {
   font-weight: 400;
@@ -122,11 +136,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0;
-  padding-left: 452px;
   padding-top: 200px;
-  padding-right: 452px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .btn {
   background-color: var(--acent-color);
@@ -184,11 +195,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .advantages {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .advantages li::before {
@@ -226,7 +238,6 @@ body {
 }
 .advantages li {
   width: 270px;
-  height: 251px;
 }
 .advantages-ikon {
   padding-left: 100px;
@@ -243,7 +254,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 27px;
+  /* margin-top: 27px; */
 }
 
 .we-do-items {
@@ -268,26 +279,19 @@ body {
 
 .teamattes-item {
   display: flex;
-  margin-bottom: 94px;
   background: #ffffff;
 }
 .teamattes-item > li {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100%-90px) / 4);
 }
 
 .teamattes-item li:not(:last-child) {
   margin-right: 30px;
 }
 
-.team .title {
-  padding-top: 94px;
-  padding-bottom: 50px;
-  margin: 0px;
-}
 .teammates {
   font-weight: 400;
   font-size: 16px;
@@ -295,9 +299,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  padding-top: 30px;
-  padding-bottom: 10px;
-  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .teammates-position {
   font-weight: 400;
@@ -306,8 +309,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin: 0px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .teamattes-social-links {
   display: flex;
@@ -318,9 +320,6 @@ body {
 }
 
 /* Постоянные клиенты */
-.clients .container .title {
-  margin-bottom: 50px;
-}
 
 .clients-items {
   display: flex;
@@ -403,6 +402,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 72px;
+  margin-bottom: 20px;
 }
 
 .social-links-footer {
@@ -482,6 +482,9 @@ body {
   border-radius: 4px;
   background-color: #2f303a;
   margin-right: 12px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: medium;
 }
 
 .subscribe-btn {
