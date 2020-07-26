@@ -29,6 +29,7 @@ img {
   padding: 0px;
   margin: 0px;
 }
+
 .list {
   list-style: none;
   padding: 0;
@@ -319,36 +320,27 @@ img {
   color: var(--secondary-text-color);
   margin-bottom: 16px;
 }
-
 .teamattes-social-links {
   display: flex;
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 24px;
-  justify-content: space-between;
-  /* background-color: slateblue; */
+  justify-content: space-around;
 }
 
-.teamattes-social-items {
-  display: inline-block;
+.social-icon {
+  display: block;
+  border-radius: 50%;
+  fill: var(--secondary-text-color);
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  /* background-color: seagreen; */
-  fill: var(--secondary-text-color);
 }
 
-.teamattes-social-items:hover,
-.teamattes-social-items:focus {
-  background-color: var(--acent-color);
+.social-icon:hover,
+.social-icon:focus {
   fill: white;
+  background-color: var(--acent-color);
 }
-
-.social-icons {
-  display: inline-block;
-  align-content: center;
-}
-
 /* Постоянные клиенты */
 
 .clients-items {
@@ -624,7 +616,6 @@ img {
   letter-spacing: 0.06em;
   color: var(--main-text-color);
   margin-top: 20px;
-  margin-left: 24px;
 }
 
 .portfolio-sub-title {
@@ -633,7 +624,6 @@ img {
   line-height: 1.87;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
-  margin-left: 24px;
 }
 .portfolio-text {
   font-weight: 400;
