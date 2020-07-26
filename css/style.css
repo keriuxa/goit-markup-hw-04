@@ -23,6 +23,12 @@ h3 {
   margin: 0px;
   padding: 0px;
 }
+
+img {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
 .list {
   list-style: none;
   padding: 0;
@@ -52,8 +58,6 @@ h3 {
 /* ХЕДЕР */
 
 .header {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
   border: 1px solid #ececec;
 }
 .logo-studio {
@@ -132,11 +136,11 @@ h3 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 200px;
+  /* padding-top: 200px; */
   margin-bottom: 30px;
 }
 .btn {
@@ -165,6 +169,10 @@ h3 {
       rgba(47, 48, 58, 0.8)
     ),
     url(../images/heroes/Header.jpg);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Чем мы занимаемся */
@@ -311,12 +319,34 @@ h3 {
   color: var(--secondary-text-color);
   margin-bottom: 16px;
 }
+
 .teamattes-social-links {
   display: flex;
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 24px;
   justify-content: space-between;
+  /* background-color: slateblue; */
+}
+
+.teamattes-social-items {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* background-color: seagreen; */
+  fill: var(--secondary-text-color);
+}
+
+.teamattes-social-items:hover,
+.teamattes-social-items:focus {
+  background-color: var(--acent-color);
+  fill: white;
+}
+
+.social-icons {
+  display: inline-block;
+  align-content: center;
 }
 
 /* Постоянные клиенты */
@@ -518,6 +548,11 @@ h3 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0px;
+  width: 145px;
+  height: 38px;
 }
 
 .portolio-buttons {
@@ -536,9 +571,26 @@ h3 {
   margin-bottom: 94px;
   margin-right: 0;
 }
-.examples-list li:not(:nth-child(3n)) {
+.portfolio-items:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+
+.portfolio-items:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
+}
+
+.portfolio-items {
+  text-decoration: none;
+  /* border: 1px solid #eeeeee;
+  width: 368;
+  width: calc((100%-60) / 3); */
+}
+.portfolio-items:hover,
+.portfolio-items:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .logo-web-portfolio {
   font-family: Raleway;
   font-weight: 700;
@@ -557,13 +609,12 @@ h3 {
   color: var(--main-text-color);
 }
 
-.btn-portfolio:focus {
-  color: white;
-  background-color: var(--acent-color);
-}
+.btn-portfolio:focus,
 .btn-portfolio:hover {
   color: white;
   background-color: var(--acent-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-title {
@@ -572,6 +623,8 @@ h3 {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+  margin-top: 20px;
+  margin-left: 24px;
 }
 
 .portfolio-sub-title {
@@ -579,12 +632,11 @@ h3 {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 .portfolio-text {
   font-weight: 400;
   line-height: 1.56;
   color: #ffffff;
-}
-.portfolio-items {
-  text-decoration: none;
 }
