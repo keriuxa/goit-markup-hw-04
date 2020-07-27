@@ -340,13 +340,18 @@ img {
 }
 
 .social-icon {
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   fill: var(--secondary-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.social-link-svg {
+  width: 20px;
+  height: 20px;
+}
 .social-icon:hover,
 .social-icon:focus {
   fill: white;
